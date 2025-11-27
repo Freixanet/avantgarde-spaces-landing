@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvantGarde Spaces | Reformas Integrales de Lujo</title>
+    <meta name="description" content="Recupera las 300 horas que perderías gestionando una obra tradicional. Plazos firmados ante notario. Diseño Bespoke.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for Zero-Setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Design Tokens Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111111',
+                        secondary: '#F4F4F0',
+                        textMain: '#1A1A1A',
+                        textMuted: '#666666',
+                        textInverted: '#FFFFFF',
+                        accent: '#C5A059', // Gold luxury tone
+                        success: '#2D5A27',
+                        error: '#8B1E1E'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Manrope"', 'sans-serif'],
+                    },
+                    spacing: {
+                        'unit': '1.5rem',
+                    },
+                    maxWidth: {
+                        'container': '1440px',
+                    },
+                    borderRadius: {
+                        'none': '0px', // Enforcing 0px radius token for sharp luxury look
+                    },
+                    boxShadow: {
+                        'luxury': '0 20px 40px -10px rgba(0,0,0,0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white selection:bg-accent selection:text-white antialiased text-textMain font-sans">
+    <div id="root"></div>
+    <!-- Vite Entry Point -->
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
