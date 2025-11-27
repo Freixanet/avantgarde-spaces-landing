@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Use repository name as base path for GitHub Pages
-  base: '/avantgarde-spaces-landing/',
+  // Use relative base path for maximum compatibility
+  base: './',
   build: {
     outDir: 'dist',
   }
